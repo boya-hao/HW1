@@ -1,0 +1,7 @@
+mapping for geo-point
+
+curl -XPUT "https://search-twittektustqm.us-east-1.es.amazonaws.com/hillaryn" -d'
+{"mappings":{"twitter_filter": {"_all": {"enabled": false},"properties":{"text": {"type": "string"},"creates_at": {"type": "string"},"coordinates":{"properties":{"coordinates": {"type": "geo_point"}}}}}}}'
+
+curl -XPUT "https://search-twittektustqm.us-east-1.es.amazonaws.com/trumpn" -d'
+{"mappings":{"twitter_filter": {"_all": {"enabled": false},"properties":{"text": {"type": "string"},"creates_at": {"type": "string"},"coordinates":{"properties":{"coordinates": {"type": "geo_point"}}}}}}}'
